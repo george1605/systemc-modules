@@ -1,0 +1,38 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'georg' on host 'kg' (Windows NT_amd64 version 6.2) on Mon Jun 15 17:12:36 +0300 2026
+INFO: [HLS 200-10] In directory 'C:/Users/georg/AppData/Roaming/Xilinx/Vitis'
+Sourcing Tcl script 'C:/Users/georg/AppData/Roaming/Xilinx/Vitis/new_project/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project new_project 
+INFO: [HLS 200-10] Opening project 'C:/Users/georg/AppData/Roaming/Xilinx/Vitis/new_project'.
+INFO: [HLS 200-1510] Running: set_top main 
+INFO: [HLS 200-1510] Running: add_files tb.cpp 
+INFO: [HLS 200-10] Adding design file 'tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files main.cpp 
+INFO: [HLS 200-10] Adding design file 'main.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/georg/AppData/Roaming/Xilinx/Vitis/new_project/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvf1517-3-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvf1517-3-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0 
+INFO: [HLS 200-1510] Running: set_directive_top -name main main 
+INFO: [HLS 200-1510] Running: csim_design -clean -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb.cpp in debug mode
+   Compiling ../../../../main.cpp in debug mode
+   Generating csim.exe
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.978 seconds; current allocated memory: 16.297 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 8.195 seconds; peak allocated memory: 1.084 GB.

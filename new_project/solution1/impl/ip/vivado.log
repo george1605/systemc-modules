@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jan 13 10:59:55 2026
+# Process ID: 9396
+# Current directory: C:/Users/georg/AppData/Roaming/Xilinx/Vitis/new_project/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/georg/AppData/Roaming/Xilinx/Vitis/new_project/solution1/impl/ip/vivado.log
+# Journal file: C:/Users/georg/AppData/Roaming/Xilinx/Vitis/new_project/solution1/impl/ip\vivado.jou
+# Running On: KG, OS: Windows, CPU Frequency: 3193 MHz, CPU Physical cores: 4, Host memory: 17138 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1237.250 ; gain = 0.000
+ERROR: '2601131059' is an invalid argument. Please specify an integer value.
+    while executing
+"rdi::set_property core_revision 2601131059 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 745)
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 13 11:00:12 2026...

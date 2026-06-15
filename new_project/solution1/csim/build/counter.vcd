@@ -1,0 +1,77 @@
+$date
+     Jun 15, 2026       17:14:30
+$end
+
+$version
+ SystemC 2.3.1-Accellera --- Oct 21 2017 13:39:34
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  clock       $end
+$var wire    1  aaaab  reset       $end
+$var wire    1  aaaac  enable       $end
+$var wire    1  aaaad  parallel_load       $end
+$var wire    4  aaaae  data_in [3:0]  $end
+$var wire    4  aaaaf  count [3:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 1e-009 sec = 1000 timescale units.
+$end
+
+$dumpvars
+0aaaaa
+0aaaab
+0aaaac
+0aaaad
+b0 aaaae
+b0 aaaaf
+$end
+
+#2000
+1aaaaa
+
+#3000
+0aaaaa
+
+#4000
+1aaaaa
+
+#5000
+0aaaaa
+
+#6000
+1aaaaa
+
+#7000
+0aaaaa
+
+#8000
+1aaaaa
+
+#9000
+0aaaaa
+
+#10000
+1aaaaa
+
+#11000
+0aaaaa
+1aaaab
+
+#12000
+1aaaaa
+0aaaab
+
+#13000
+0aaaaa
+b1010 aaaae
+
+#14000
+1aaaaa
+
